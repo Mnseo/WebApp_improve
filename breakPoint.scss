@@ -1,0 +1,32 @@
+//Break Point
+$mobile: 412px;
+$tablet: 768px; /*IPAD mini*/
+$laptop: 1020px; 
+$desktop: 1400px;
+
+
+// Mixins 
+
+@mixin mobile {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
